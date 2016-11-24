@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView3"
+        android:background="@color/fbutton_color_asbestos">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama User"
+                android:textSize="16sp"
+                android:textColor="@color/actionbar_dark_color"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/form_nama_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="20dp"
+                android:background="@drawable/shape_form_control"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="18dp"
+                android:paddingLeft="18dp"
+                android:hint="Masukkan nama penyakit disini"
+                android:imeOptions="actionNext"
+                android:textColorHint="@color/gray_2"
+                android:inputType="text"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:focusableInTouchMode="true"
+                android:enabled="false"
+                android:clickable="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textSize="16sp"
+                android:textColor="@color/actionbar_dark_color"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/form_username_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="20dp"
+                android:background="@drawable/shape_form_control"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="18dp"
+                android:paddingLeft="18dp"
+                android:hint="Masukkan nama penyakit disini"
+                android:imeOptions="actionNext"
+                android:textColorHint="@color/gray_2"
+                android:inputType="text"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:focusableInTouchMode="true"
+                android:enabled="false"
+                android:clickable="false"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textSize="16sp"
+                android:textColor="@color/actionbar_dark_color"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/form_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="20dp"
+                android:background="@drawable/shape_form_control"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="18dp"
+                android:paddingLeft="18dp"
+                android:imeOptions="actionNext"
+                android:textColorHint="@color/gray_2"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:gravity="top"
+                android:enabled="false"
+                android:clickable="false"
+                android:focusableInTouchMode="true"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Telp"
+                android:textSize="16sp"
+                android:textColor="@color/actionbar_dark_color"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/form_telp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="20dp"
+                android:background="@drawable/shape_form_control"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="18dp"
+                android:paddingLeft="18dp"
+                android:hint="Masukkan saran penanganan penyakit disini"
+                android:imeOptions="actionNext"
+                android:textColorHint="@color/gray_2"
+                android:inputType="text|textMultiLine"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:gravity="top"
+                android:focusableInTouchMode="true"
+                android:enabled="false"
+                android:clickable="false"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Poin"
+                android:textSize="16sp"
+                android:textColor="@color/actionbar_dark_color"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/form_poin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="20dp"
+                android:background="@drawable/shape_form_control"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="18dp"
+                android:paddingLeft="18dp"
+                android:hint="Masukkan nama penyakit disini"
+                android:imeOptions="actionNext"
+                android:textColorHint="@color/gray_2"
+                android:inputType="text"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:focusableInTouchMode="true"
+                android:enabled="false"
+                android:clickable="false" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

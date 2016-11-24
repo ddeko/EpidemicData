@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/view_default_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout3"
+
+        android:background="@color/fbutton_color_asbestos">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="25dp"
+            tools:context="com.kurio.kurator.kuratorapps.addtrending.userinterface.AddTrendingActivity">
+
+            <ImageView
+                android:id="@+id/imageRewards"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:src="@drawable/ic_gift_white_36dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:id="@+id/textNamaRewards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Rewards"
+                android:singleLine="true"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textIsSelectable="false"
+                android:textColor="@color/actionbar_color" />
+
+            <TextView
+                android:id="@+id/textDeskripsiRewards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="Roboto-Regular"
+                android:text="Deskripsi Rewards"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+
+            <TextView
+
+                android:layout_marginTop="20dp"
+                android:id="@+id/textPoin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Poin"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#596465" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Roboto-Regular"
+                    android:text="Sisa : "
+                    android:textSize="20sp"
+
+                    android:textStyle="bold"
+                    android:textColor="#596465" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="Roboto-Regular"
+                android:text="Sisa"
+                android:textSize="20sp"
+                android:id="@+id/textSisa"
+                android:textStyle="bold"
+                android:textColor="#596465" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Roboto-Regular"
+                    android:text=" Pcs"
+                    android:textSize="20sp"
+
+                    android:textStyle="bold"
+                    android:textColor="#596465" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonRedeem"
+                android:layout_width="match_parent"
+                android:background="@drawable/shape_halfoval_button"
+                android:layout_height="wrap_content"
+                android:text="Redeem"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

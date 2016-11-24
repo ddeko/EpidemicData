@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/view_default_actionbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout3"
+        android:background="@color/fbutton_color_asbestos">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Nama Penyakit"
+                android:textColor="@color/actionbar_dark_color"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/form_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_form_control"
+                android:focusableInTouchMode="true"
+                android:hint="Masukkan nama penyakit disini"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:minHeight="20dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="10dp"
+                android:text="Tipe Penyakit"
+                android:textColor="@color/actionbar_dark_color"
+                android:textSize="16sp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_horizontal" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/progressBar"
+                    android:background="@drawable/shape_form_control">
+
+                    <Spinner
+                        android:id="@+id/spinnerTipePenyakit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:background="@drawable/shape_form_control"
+                        android:spinnerMode="dropdown"></Spinner>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/ic_keyboard_arrow_down_black_18dp" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="10dp"
+                android:text="Lokasi"
+                android:textColor="@color/actionbar_dark_color"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/form_item_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/shape_form_control"
+                    android:ellipsize="marquee"
+                    android:gravity="center_vertical"
+                    android:hint="Pilih lokasi"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:minHeight="20dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray_2"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/ic_keyboard_arrow_down_black_18dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="10dp"
+                android:text="Jumlah Penderita"
+                android:textColor="@color/actionbar_dark_color"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/form_item_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_form_control"
+                android:hint="0"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:minHeight="20dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="10dp"
+                android:text="Deskripsi Penyakit"
+                android:textColor="@color/actionbar_dark_color"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/form_item_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_form_control"
+                android:gravity="top"
+                android:hint="Masukkan deskripsi penyakit disini"
+                android:imeOptions="actionNext"
+                android:inputType="text|textMultiLine"
+                android:lines="3"
+                android:minHeight="20dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="10dp"
+                android:text="Gejala"
+                android:textColor="@color/actionbar_dark_color"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/form_item_gejala"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_form_control"
+                android:gravity="top"
+                android:hint="Masukkan gejala penyakit disini"
+                android:imeOptions="actionNext"
+                android:inputType="text|textMultiLine"
+                android:lines="3"
+                android:minHeight="20dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="10dp"
+                android:text="Saran Penanganan"
+                android:textColor="@color/actionbar_dark_color"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/form_item_saran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_form_control"
+                android:gravity="top"
+                android:hint="Masukkan saran penanganan penyakit disini"
+                android:imeOptions="actionNext"
+                android:inputType="text|textMultiLine"
+                android:lines="3"
+                android:minHeight="20dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_2"
+                android:textSize="14sp" />
+
+
+
+            <Button
+                android:id="@+id/button_simpan"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/shape_halfoval_button"
+
+                android:layout_below="@+id/detail_body_1"
+                android:text="Simpan"
+                android:textColor="@color/white"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="25dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="plbtw.epidemicdata">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".activitiy.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activitiy.LoginActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activitiy.SignupActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activitiy.ChallangeActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_challange" >
+        </activity>
+
+        <activity
+            android:name=".activitiy.TabMenuActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".activitiy.DetailRewardsActivity"
+            android:label="Detail Rewards"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".activitiy.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".activitiy.ExploreDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".activitiy.EditPenyakitActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activitiy.PostEdActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".activitiy.PilihLokasiActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".fragment.ProfileFragment"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+
+    </application>
+
+</manifest>
